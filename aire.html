@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片上传与显示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url("beijing.jpg");
+            color: white;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+        #upload-area {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer; /* 添加手型光标 */
+        }
+        #preview {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #preview img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        #preview p {
+            font-size: 1.2em;
+            color: white;
+        }
+
+        /* 自定义弹窗样式 */
+        #custom-alert {
+            display: none; /* 默认隐藏 */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+            color: #333333;
+        }
+        #custom-alert p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        #overlay {
+            display: none; /* 默认隐藏 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <h1>甲骨文识别模型</h1>
+    <div id="upload-area">
+        <p>将照片拖放到此处，或点击选择文件</p>
+        <input type="file" id="file-input" accept="image/*" style="display: none;"> <!-- 隐藏文件输入 -->
+    </div>
+    <div id="preview">
+        <p>预览区域</p>
+    </div>
+
+    <!-- 自定义弹窗 -->
+    <div id="overlay"></div>
+    <div id="custom-alert">
+        <p>AI识别中...</p>
+    </div>
+
+    <script>
+        // 获取文件输入和预览区域元素
+        const fileInput = document.getElementById('file-input');
+        const uploadArea = document.getElementById('upload-area');
+        const previewArea = document.getElementById('preview');
+
+        // 获取自定义弹窗和遮罩层元素
+        const customAlert = document.getElementById('custom-alert');
+        const overlay = document.getElementById('overlay');
+
+        // 点击上传区域触发文件选择
+        uploadArea.addEventListener('click', function () {
+            fileInput.click(); // 触发文件选择对话框
+        });
+
+        // 监听文件选择事件
+        fileInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            handleFile(file);
+        });
+
+        // 显示照片和命名文本
+        function displayImage(file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                // 创建图片元素
+                const img = document.createElement('img');
+                img.src = e.target.result;
+
+                // 创建命名文本
+                const fileName = file.name.replace(/\.[^/.]+$/, ""); // 去掉文件后缀
+                const text = document.createElement('p');
+                text.innerText = `识别结果：${fileName}`;
+
+                // 清空预览区域并显示文本和图片
+                previewArea.innerHTML = '';
+                previewArea.appendChild(text);
+                previewArea.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // 处理文件
+        function handleFile(file) {
+            if (file && file.type.startsWith('image/')) {
+                // 显示自定义弹窗
+                customAlert.style.display = 'block';
+                overlay.style.display = 'block';
+
+                // 延迟 1 秒后隐藏弹窗并显示结果
+                setTimeout(function () {
+                    customAlert.style.display = 'none';
+                    overlay.style.display = 'none';
+                    displayImage(file);
+                }, 1000); // 1000 毫秒 = 1 秒
+            } else {
+                alert('请上传图片文件！');
+            }
+        }
+
+        // 拖放功能
+        uploadArea.addEventListener('dragover', function (event) {
+            event.preventDefault(); // 阻止默认行为
+            uploadArea.style.backgroundColor = '#f0f0f0';
+        });
+        uploadArea.addEventListener('dragleave', function (event) {
+            event.preventDefault(); // 阻止默认行为
+            uploadArea.style.backgroundColor = '';
+        });
+        uploadArea.addEventListener('drop', function (event) {
+            event.preventDefault(); // 阻止默认行为
+            uploadArea.style.backgroundColor = '';
+            const file = event.dataTransfer.files[0];
+            handleFile(file);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨文书写工具 - 甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="shuxiegongju.png" alt="甲骨文刻写工具组合" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文书写工具</h2>
+                <div class="herb-tags">
+                    <span>青铜刀</span>
+                    <span>刻写工艺</span>
+                    <span>龟甲处理</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>核心工具：</strong>青铜刀（占70%）、玉刀（占30%）</p>
+                    <p><strong>辅助工具：</strong>毛笔（朱书/墨书甲骨文专用）</p>
+                    <p><strong>材料选择：</strong>
+                        龟腹甲（60%，取其平整）、牛肩胛骨（40%，取其坚硬）
+                    </p>
+                    <p><strong>刻写硬度：</strong>
+                        龟甲莫氏硬度2.5-3，兽骨硬度3-4，青铜刀硬度5-5.5
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('tools')">工具类型</button>
+                <button class="tab-btn" onclick="showTab('process')">刻写工艺</button>
+                <button class="tab-btn" onclick="showTab('material')">材料分析</button>
+            </div>
+
+            <div id="tools" class="tab-content active">
+                <h3>主要书写工具</h3>
+                <div class="tool-grid">
+                    <div class="tool-item">
+                        <h4>青铜刻刀</h4>
+                        <p>刃口呈三角形，长10-15cm</p>
+                    </div>
+                    <div class="tool-item">
+                        <h4>玉质刻刀</h4>
+                        <p>刃口更锋利，用于精细刻写</p>
+                    </div>
+                    <div class="tool-item">
+                        <h4>毛笔</h4>
+                        <p>动物毛发制成，用于书写未刻卜辞</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="process" class="tab-content">
+                <h3>刻写流程解析</h3>
+                <ol class="process-list">
+                    <li><strong>选材</strong>：龟甲选腹甲，兽骨选牛肩胛骨</li>
+                    <li><strong>锯削</strong>：用锯子修整材料边缘</li>
+                    <li><strong>钻凿</strong>：
+                        钻圆孔（深）+凿长槽（浅），<br>
+                        形成占卜受热点
+                    </li>
+                    <li><strong>灼烧</strong>：用炭火灼烧钻凿处，产生兆纹</li>
+                    <li><strong>刻写</strong>：沿兆纹刻写卜辞，先刻竖笔后刻横笔</li>
+                </ol>
+            </div>
+
+            <div id="material" class="tab-content">
+                <h3>甲骨材料对比</h3>
+                <table class="material-table">
+                    <tr>
+                        <th>特性</th>
+                        <th>龟甲</th>
+                        <th>兽骨</th>
+                    </tr>
+                    <tr>
+                        <td>厚度</td>
+                        <td>1-2mm（较薄）</td>
+                        <td>2-5mm（较厚）</td>
+                    </tr>
+                    <tr>
+                        <td>纹路</td>
+                        <td>天然放射性裂纹</td>
+                        <td>致密无纹</td>
+                    </tr>
+                    <tr>
+                        <td>典型用途</td>
+                        <td>记录大事（如祭祀、战争）</td>
+                        <td>记录日常占卜</td>
+                    </tr>
+                    <tr>
+                        <td>现存比例</td>
+                        <td>62%</td>
+                        <td>38%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

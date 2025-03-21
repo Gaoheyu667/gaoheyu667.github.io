@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨文记载内容 - 甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="jizaineirong.png" alt="甲骨文卜辞拓片" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文记载内容</h2>
+                <div class="herb-tags">
+                    <span>占卜记录</span>
+                    <span>社会百科</span>
+                    <span>历史档案</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>核心性质：</strong>中国最早的王室档案库</p>
+                    <p><strong>载体形式：</strong>
+                        龟甲（60%）、牛肩胛骨（40%），单版最多刻180字
+                    </p>
+                    <p><strong>内容分类：</strong>
+                        祭祀(30%)、战争(20%)、农业(15%)、气象(10%)、疾病(10%)、其他(15%)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('divination')">占卜记录</button>
+                <button class="tab-btn" onclick="showTab('society')">社会生活</button>
+                <button class="tab-btn" onclick="showTab('nature')">自然现象</button>
+            </div>
+
+            <div id="divination" class="tab-content active">
+                <h3>典型占卜案例</h3>
+                <div class="case-box">
+                    <h4>祭祀占卜</h4>
+                    <p>
+                        卜辞：<span class="oracle-quote">"丁巳卜，贞：王宾中丁肜日，亡尤。"</span><br>
+                        译文：商王在丁巳日占卜，问祭祀中丁用肜祭是否顺利
+                    </p>
+                </div>
+                <div class="case-box">
+                    <h4>战争占卜</h4>
+                    <p>
+                        卜辞：<span class="oracle-quote">"辛巳卜，争贞：今载王其伐土方。"</span><br>
+                        译文：商王询问今年是否征伐土方部落
+                    </p>
+                </div>
+            </div>
+
+            <div id="society" class="tab-content">
+                <h3>社会生活记载</h3>
+                <ul class="society-list">
+                    <li><strong>农业</strong>：记载"黍"、"稷"等农作物，如"癸卯卜，今日雨，其自西来雨？"</li>
+                    <li><strong>医学</strong>：记录"疾首"（头痛）、"疾齿"（牙痛）等疾病名称</li>
+                    <li><strong>天文</strong>：记载"七日己巳夕有新大星并火"（新星观测）</li>
+                </ul>
+            </div>
+
+            <div id="nature" class="tab-content">
+                <h3>自然现象记录</h3>
+                <table class="nature-table">
+                    <tr>
+                        <th>现象</th>
+                        <th>卜辞示例</th>
+                        <th>科学价值</th>
+                    </tr>
+                    <tr>
+                        <td>日食</td>
+                        <td>"癸酉贞：日夕有食，非祸？"</td>
+                        <td>最早的日食记录之一</td>
+                    </tr>
+                    <tr>
+                        <td>地震</td>
+                        <td>"乙巳卜，贞：兹震，隹年祸？"</td>
+                        <td>殷商地震活动证据</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

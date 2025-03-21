@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="dingyi.png" alt="甲骨文详图" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文</h2>
+                <div class="herb-tags">
+                    <span>古老文字</span>
+                    <span>占卜记录</span>
+                    <span>历史见证</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>起源：</strong>殷商时期</p>
+                    <p><strong>载体：</strong>龟甲和兽骨</p>
+                    <p><strong>用途：</strong>主要用于占卜记录，是研究殷商社会的重要资料。</p>
+                    <p><strong>特点：</strong>象形程度高，笔画瘦硬，形体结构尚未完全定型。</p>
+                    <p><strong>研究价值：</strong>对了解古代政治、经济、文化、宗教等方面具有不可替代的作用。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('usage')">研究方法</button>
+                <button class="tab-btn" onclick="showTab('precautions')">注意事项</button>
+                <button class="tab-btn" onclick="showTab('history')">历史渊源</button>
+            </div>
+            <div id="usage" class="tab-content active">
+                <h3>研究方法</h3>
+                <div class="usage-methods">
+                    <div class="method-card">
+                        <h4>文字考释</h4>
+                        <p>通过对比、分析字形结构，结合文献资料，考释甲骨文的字义。</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>分期断代</h4>
+                        <p>根据甲骨文的字体风格、语法特征等，对其进行分期断代研究。</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>内容解读</h4>
+                        <p>解读甲骨文中记载的占卜事项、历史事件等，了解殷商社会。</p>
+                    </div>
+                </div>
+            </div>
+            <div id="precautions" class="tab-content">
+                <h3>注意事项</h3>
+                <ul class="precautions-list">
+                    <li>考释字义需谨慎，避免主观臆断。</li>
+                    <li>分期断代要综合多方面因素，不能仅凭单一特征。</li>
+                    <li>解读内容要结合历史背景，避免过度解读。</li>
+                    <li>尊重原始资料，不随意篡改。</li>
+                    <li>研究过程中不断更新知识，关注最新研究成果。</li>
+                </ul>
+            </div>
+            <div id="history" class="tab-content">
+                <h3>历史渊源</h3>
+                <p class="history-text">甲骨文是中国已知最早的成体系的文字形式，最早出土于河南安阳殷墟。它上承原始刻绘符号，下启青铜铭文，是汉字发展的关键形态。从清末被发现以来，甲骨文就成为了研究中国古代文明的重要窗口。</p>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

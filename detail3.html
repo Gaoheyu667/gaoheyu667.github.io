@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨文字形特点 - 甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="zixingtedian.png" alt="甲骨文字形结构分析图" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文字形特点</h2>
+                <div class="herb-tags">
+                    <span>象形文字</span>
+                    <span>结构特征</span>
+                    <span>笔画分析</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>造字法体系：</strong>象形(60%)、会意(20%)、形声(15%)、指事(5%)</p>
+                    <p><strong>笔画特征：</strong>
+                        以直线为主，棱角分明，体现刀刻痕迹；<br>
+                        典型笔画：横、竖、斜、点、折
+                    </p>
+                    <p><strong>结构特点：</strong>
+                        字体方向自由（可正可反），<br>
+                        存在大量异体字（如"牢"有12种写法）
+                    </p>
+                    <p><strong>典型例字：</strong>
+                        <span class="oracle-char">日</span>（象形）、
+                        <span class="oracle-char">休</span>（会意）、
+                        <span class="oracle-char">江</span>（形声）
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('structure')">结构分析</button>
+                <button class="tab-btn" onclick="showTab('evolution')">演变过程</button>
+                <button class="tab-btn" onclick="showTab('comparison')">与金文对比</button>
+            </div>
+
+            <div id="structure" class="tab-content active">
+                <h3>字形结构分类</h3>
+                <ul class="structure-list">
+                    <li>
+                        <h4>独体字</h4>
+                        <p>直接描绘实物：<span class="oracle-char">牛</span>（牛头部）、<span class="oracle-char">羊</span>（羊角）</p>
+                    </li>
+                    <li>
+                        <h4>合体字</h4>
+                        <p>多部件组合：<span class="oracle-char">从</span>（二人相从）、<span class="oracle-char">林</span>（二木为林）</p>
+                    </li>
+                    <li>
+                        <h4>指事字</h4>
+                        <p>符号辅助：<span class="oracle-char">上</span>（横线以上）、<span class="oracle-char">下</span>（横线以下）</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="evolution" class="tab-content">
+                <h3>字形演变阶段</h3>
+                <table class="evolution-table">
+                    <tr>
+                        <th>时期</th>
+                        <th>字体特征</th>
+                        <th>代表字形</th>
+                    </tr>
+                    <tr>
+                        <td>武丁期</td>
+                        <td>粗壮豪放</td>
+                        <td><span class="oracle-char">王</span></td>
+                    </tr>
+                    <tr>
+                        <td>帝辛期</td>
+                        <td>纤细工整</td>
+                        <td><span class="oracle-char">王</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="comparison" class="tab-content">
+                <h3>甲骨文 vs 金文</h3>
+                <div class="compare-grid">
+                    <div class="compare-item">
+                        <h4>甲骨文</h4>
+                        <p>刀刻硬线条</p>
+                        <p><span class="oracle-char">鼎</span></p>
+                    </div>
+                    <div class="compare-item">
+                        <h4>金文</h4>
+                        <p>铸造圆润笔画</p>
+                        <p><span class="bronze-char">鼎</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

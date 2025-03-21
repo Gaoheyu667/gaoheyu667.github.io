@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨文分期分类 - 甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="fenqifenlei.png" alt="甲骨文分期分类" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文分期分类</h2>
+                <div class="herb-tags">
+                    <span>分期断代</span>
+                    <span>字体演变</span>
+                    <span>历史时期</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>主流分法：</strong>董作宾五期分法（1933年提出）</p>
+                    <p><strong>分类依据：</strong>
+                        字体风格、贞人（占卜者）、祭祀制度、称谓体系
+                    </p>
+                    <p><strong>总体现状：</strong>
+                        已发现15万片甲骨，分属商代270年（约前1300-前1046）
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('system')">分期体系</button>
+                <button class="tab-btn" onclick="showTab('evolution')">字体演变</button>
+                <button class="tab-btn" onclick="showTab('method')">断代方法</button>
+            </div>
+
+            <div id="system" class="tab-content active">
+                <h3>董作宾五期分法</h3>
+                <ol class="period-list">
+                    <li>
+                        <h4>第一期：武丁期（雄伟期）</h4>
+                        <p>
+                            商王：武丁<br>
+                            特点：字体粗壮，结构自由，内容多与战争、祭祀相关
+                        </p>
+                    </li>
+                    <li>
+                        <h4>第二期：祖庚祖甲期（谨饬期）</h4>
+                        <p>
+                            商王：祖庚、祖甲<br>
+                            特点：字体工整，格式规范，出现祭祀谱牒
+                        </p>
+                    </li>
+                    <li>
+                        <h4>第三期：廪辛康丁期（颓靡期）</h4>
+                        <p>
+                            商王：廪辛、康丁<br>
+                            特点：字体草率，讹变增多，内容趋于简略
+                        </p>
+                    </li>
+                    <li>
+                        <h4>第四期：武乙文丁期（劲峭期）</h4>
+                        <p>
+                            商王：武乙、文丁<br>
+                            特点：字体刚劲，刀法锐利，出现大片刻辞
+                        </p>
+                    </li>
+                    <li>
+                        <h4>第五期：帝乙帝辛期（严整期）</h4>
+                        <p>
+                            商王：帝乙、帝辛<br>
+                            特点：字体修长，结构严谨，内容以祭祀为主
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <div id="evolution" class="tab-content">
+                <h3>字体演变对比</h3>
+                <table class="evolution-table">
+                    <tr>
+                        <th>时期</th>
+                        <th>代表字形（王）</th>
+                        <th>字体特征</th>
+                        <th>典型拓片</th>
+                    </tr>
+                    <tr>
+                        <td>武丁期</td>
+                        <td><span class="oracle-char">王</span></td>
+                        <td>肥笔粗重</td>
+                    </tr>
+                    <tr>
+                        <td>帝辛期</td>
+                        <td><span class="oracle-char">王</span></td>
+                        <td>瘦劲修长</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="method" class="tab-content">
+                <h3>断代研究方法</h3>
+                <ul class="method-list">
+                    <li><strong>贞人系联法</strong>：通过占卜者名字关联不同甲骨</li>
+                    <li><strong>称谓判定法</strong>：根据对先人的称呼确定王世</li>
+                    <li><strong>坑位层位法</strong>：结合出土考古层位判断年代</li>
+                    <li><strong>碳十四测年</strong>：现代科技辅助测定甲骨年代</li>
+                </ul>
+                <p class="method-note">
+                    例：通过"父乙"称谓可确定为武丁时期（武丁称小乙为父乙）
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

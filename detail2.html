@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="faxianshijian.png" alt="甲骨文详图" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文发现时间</h2>
+                <div class="herb-tags">
+                    <span>重要考古发现</span>
+                    <span>历史里程碑</span>
+                    <span>开启古文字研究</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>发现时间：</strong>一般认为是1899年。</p>
+                    <p><strong>发现人物：</strong>王懿荣。</p>
+                    <p><strong>发现背景：</strong>当时王懿荣生病，在抓的中药“龙骨”里发现上面有刻画的符号，经研究考证为殷商时期的文字，从而发现了甲骨文。</p>
+                    <p><strong>发现意义：</strong>甲骨文的发现为研究殷商历史提供了直接且珍贵的资料，让人们对中国古代文明的起源和发展有了更深入的认识，开启了中国古文字研究的新纪元。</p>
+                    <p><strong>后续影响：</strong>自发现后，吸引了众多学者投入到甲骨文的研究中，推动了考古学、历史学等相关学科的发展。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('usage')">研究历程</button>
+                <button class="tab-btn" onclick="showTab('precautions')">注意事项</button>
+                <button class="tab-btn" onclick="showTab('history')">历史背景</button>
+            </div>
+            <div id="usage" class="tab-content active">
+                <h3>研究历程</h3>
+                <div class="usage-methods">
+                    <div class="method-card">
+                        <h4>初期考证</h4>
+                        <p>王懿荣发现后，初步断定为殷商文字，之后刘鹗等学者进一步收集、整理和研究。</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>深入探究</h4>
+                        <p>罗振玉、王国维等学者对甲骨文进行了更深入的研究，考释出大量文字，确定了甲骨文的出土地点等。</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>现代研究</h4>
+                        <p>随着科技的发展，现代学者运用多学科方法对甲骨文进行研究，不断取得新的成果。</p>
+                    </div>
+                </div>
+            </div>
+            <div id="precautions" class="tab-content">
+                <h3>注意事项</h3>
+                <ul class="precautions-list">
+                    <li>研究时要结合当时的历史背景和文化环境，避免片面解读。</li>
+                    <li>对于新发现的甲骨文资料，要谨慎对待，进行科学的分析和鉴定。</li>
+                    <li>尊重前人的研究成果，在此基础上进行创新和拓展。</li>
+                    <li>研究过程中要注重团队合作和交流，分享不同的观点和经验。</li>
+                    <li>不断学习新的知识和技术，提高研究的准确性和效率。</li>
+                </ul>
+            </div>
+            <div id="history" class="tab-content">
+                <h3>历史背景</h3>
+                <p class="history-text">19世纪末，中国正处于内忧外患的时期，但学术研究仍在艰难前行。当时金石学较为发达，学者们对古代器物和文字有着浓厚的兴趣。在这样的背景下，甲骨文的偶然发现犹如一颗璀璨的新星，为学术界带来了新的希望和研究方向。它让人们看到了中国古代文明的辉煌，也激励着一代又一代的学者不断探索和发掘。</p>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

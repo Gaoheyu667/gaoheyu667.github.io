@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲骨文研究学科 - 甲骨AI鉴</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">甲骨AI鉴</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="more.html">更多古文字</a>
+                <span id="current-time"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detail-page">
+        <!-- 文字详情部分 -->
+        <div class="herb-detail">
+            <div class="herb-images">
+                <img src="yanjiuxueke.png" alt="甲骨文研究学科体系图" class="main-image">
+            </div>
+            <div class="herb-info">
+                <h2>甲骨文研究学科</h2>
+                <div class="herb-tags">
+                    <span>甲骨学</span>
+                    <span>交叉学科</span>
+                    <span>研究方法</span>
+                </div>
+                <div class="info-section">
+                    <p><strong>学科定位：</strong>中国特有的国际性显学</p>
+                    <p><strong>核心目标：</strong>
+                        释读文字、研究历史、探索文明起源
+                    </p>
+                    <p><strong>学科成熟标志：</strong>
+                        1933年董作宾《甲骨文断代研究例》出版
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细说明部分 -->
+        <div class="herb-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('system')">学科体系</button>
+                <button class="tab-btn" onclick="showTab('method')">研究方法</button>
+                <button class="tab-btn" onclick="showTab('technology')">技术应用</button>
+            </div>
+
+            <div id="system" class="tab-content active">
+                <h3>学科构成体系</h3>
+                <div class="学科树">
+                    <div class="main-subject">甲骨学</div>
+                    <div class="branch">
+                        <div class="sub-subject">文字学</div>
+                        <div class="sub-subject">历史学</div>
+                        <div class="sub-subject">考古学</div>
+                    </div>
+                    <div class="branch">
+                        <div class="sub-subject">文献学</div>
+                        <div class="sub-subject">文化人类学</div>
+                        <div class="sub-subject">数字人文</div>
+                    </div>
+                </div>
+                <p class="学科说明">
+                    与20+学科形成交叉研究，如：<br>
+                    甲骨天文学（研究日食记录）、甲骨医学（研究疾病名称）
+                </p>
+            </div>
+
+            <div id="method" class="tab-content">
+                <h3>主要研究方法</h3>
+                <ul class="method-list">
+                    <li>
+                        <h4>二重证据法</h4>
+                        <p>
+                            创始人：王国维<br>
+                            内容：甲骨文+传世文献互证<br>
+                            案例：通过甲骨文"后母戊"证实商王世系
+                        </p>
+                    </li>
+                    <li>
+                        <h4>考古类型学</h4>
+                        <p>
+                            对甲骨形态（钻凿形态、字体风格）进行分类
+                        </p>
+                    </li>
+                    <li>
+                        <h4>统计学方法</h4>
+                        <p>
+                            统计"年""月""日"出现频率，研究历法
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="technology" class="tab-content">
+                <h3>现代技术应用</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <h4>AI文字识别</h4>
+                        <p>
+                            准确率：92%（2023年数据）<br>
+                            应用：自动释读残片文字
+                        </p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>3D扫描</h4>
+                        <p>
+                            精度：0.01mm<br>
+                            应用：复原甲骨断裂前形态
+                        </p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>碳十四测年</h4>
+                        <p>
+                            误差：±20年<br>
+                            应用：测定甲骨绝对年代
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：13478398261</p>
+                <p>邮箱：1132270325@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 甲骨AI鉴 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
